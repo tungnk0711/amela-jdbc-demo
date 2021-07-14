@@ -12,6 +12,7 @@
     </h2>
 </center>
 <div align="center">
+    ${errors }
     <form method="post">
         <table border="1" cellpadding="5">
             <caption>
@@ -20,19 +21,19 @@
             <tr>
                 <th>User Name:</th>
                 <td>
-                    <input type="text" name="name" id="name" size="45"/>
+                    <input type="text" name="name" value="${user.name }" size="45">
                 </td>
             </tr>
             <tr>
                 <th>User Email:</th>
                 <td>
-                    <input type="text" name="email" id="email" size="45"/>
+                    <input type="text" name="email" value="${user.email }" size="45">
                 </td>
             </tr>
             <tr>
                 <th>Country:</th>
                 <td>
-                    <input type="text" name="country" id="country" size="15"/>
+                    <input type="text" name="country" value="${user.country }" size="15">
                 </td>
             </tr>
             <tr>

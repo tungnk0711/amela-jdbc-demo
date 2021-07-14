@@ -1,5 +1,7 @@
 package com.amela.model;
 
+import javax.validation.constraints.NotEmpty;
+
 public class User {
     private int id;
     private String name;
@@ -25,15 +27,14 @@ public class User {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
 
+    @NotEmpty
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -41,7 +42,6 @@ public class User {
     public String getEmail() {
         return email;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }
@@ -49,7 +49,6 @@ public class User {
     public String getCountry() {
         return country;
     }
-
     public void setCountry(String country) {
         this.country = country;
     }
